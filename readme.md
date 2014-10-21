@@ -56,7 +56,7 @@ In `views` is rendered the HTML code, JSON string, XML and others...
 1. Clone the repository:
 
 
-    $ git clone ...
+    $ git clone git@github.com:ewtmelo/essencial-nodejs-mvc.git
 
     
 2. Access the directory of project and install dependencies:
