@@ -1,7 +1,7 @@
 {
   "name": "4routes",
   "version": "1.0.0",
-  "description": "Monitoring app",
+  "description": "Simple MVC structure",
   "main": "app.js",
   "dependencies": {
     "cookie-parser": "^1.3.3",
