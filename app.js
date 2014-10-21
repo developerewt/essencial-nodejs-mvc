@@ -4,7 +4,6 @@ var logger          = require('morgan');
 var cookieParser    = require('cookie-parser');
 var bodyParser      = require('body-parser');
 var passport        = require('passport');
-var localStrategy   = require('passport-local');
 var expressSession  = require('express-session');
 var mongoose        = require('Mongoose');
 var flash           = require('connect-flash');
@@ -56,11 +55,9 @@ app.use(function(err,req,res,next){
     });
 });
 
-//MVC Pattern specification with Services.
+//Route import
 var application = require('./app/routes/application');
-//var api4r       = require('./app/routes/api');
 app.use(application);
-//app.use(api4r);
 
 //Initialization
 var port = process.env.PORT || 3000;
