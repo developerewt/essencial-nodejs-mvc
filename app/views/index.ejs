@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8" />
+        <title>4Cash</title>
+        <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1><%= title %></h1>
+
+            <ul>
+                <% for(var i = 0;i < items.length;i++){ %>
+                    <li><%= items[i].desc %></li>
+                <% } %>
+            </ul>
+
+            <form action="/add" method="post">
+                <input type="text" name="newItem">
+                <input type="submit">
+            </form>
+        </div>
+    </body>
+
+    <script src="jquery/dist/jquery.min.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.js"></script>
+</html>
