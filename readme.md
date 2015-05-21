@@ -27,13 +27,13 @@ validators` layer and your access is equally simple. Just one
 The `models` directory store the connection with the database and
 the Schema Collection, thus, the Schema is separated of `controllers`. 
 
-In `controllers` is done the business rule, interaction with the database
+In `controllers` have the business rule, interaction with the database
 (if necessary) and data manipulation with the `node modules.
 
-In `controllers` is done the interaction with the `services` layer. Is
+In `controllers` have the interaction with the `services` layer. Is
 simple because reduces the codes in controller. Is recommended.
 
-For default, the database interaction is done in `services` and is required 
+For default, the database interaction deployed on `services` and is required 
 in `controllers`.
 
 Separately the router file, in this case, `application.js` in `app/routes` is
@@ -46,7 +46,7 @@ load the data, view, response json...
     Second Parameter: (Not required) Verify if the access is authenticated.
     Third Parameter: The controller method.
     
-    router.get('/dashboard',AuthValidator.isLogged,application.dashboard);
+    router.get('/dashboard', AuthValidator.isLogged, application.dashboard);
 
 In `views` is rendered the HTML code, JSON string, XML and others... 
 
